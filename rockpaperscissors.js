@@ -1,5 +1,6 @@
 //testing functions
 
+//get the users choice - the only options are rock paper scissors
 const getUserChoice = userInput => {
   userInput = userInput.toLowerCase();
   if (userInput === 'rock' || userInput === 'scissors' || userInput === 'paper') {
@@ -10,6 +11,7 @@ const getUserChoice = userInput => {
   }
 }
 
+//get computers choice. 0 1 2, and use switch statments to return a value
 const getComputerChoice = () =>{
   const number = Math.floor(Math.random() * 3);
   switch (number) {
@@ -25,6 +27,7 @@ const getComputerChoice = () =>{
   }
 }
 
+//determine a winner 
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
     return 'tie game';
@@ -56,6 +59,7 @@ const determineWinner = (userChoice, computerChoice) => {
 console.log(determineWinner('scissors','rock'));
 */
 
+//time to play the game
 const playGame = () => {
   const userChoice = getUserChoice('rock');
   const computerChoice = getComputerChoice();

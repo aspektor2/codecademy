@@ -1,3 +1,5 @@
+//working on conditionals. bib numbers and start times
+
 let raceNumber = Math.floor(Math.random() * 1000);
 
 let early = 'true';
